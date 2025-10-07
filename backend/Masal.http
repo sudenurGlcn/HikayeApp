@@ -1,0 +1,6 @@
+@Masal_HostAddress = http://localhost:5079
+
+GET {{Masal_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###
