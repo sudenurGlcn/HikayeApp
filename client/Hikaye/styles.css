@@ -1,0 +1,141 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Arial', sans-serif;
+}
+
+body {
+    background-color: #f0f0f0;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container {
+    max-width: 1000px;
+    margin: 20px;
+    background: white;
+    padding: 20px;
+    border-radius: 15px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.game-area {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.sentence-builder {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    min-height: 100px;
+    padding: 20px;
+    background: #f8f8f8;
+    border-radius: 10px;
+}
+
+.drop-zone {
+    width: 120px;
+    height: 60px;
+    border: 2px dashed #ccc;
+    border-radius: 8px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: all 0.3s ease;
+}
+
+.drop-zone.hover {
+    background: #e0e0e0;
+    border-style: solid;
+}
+
+.word-categories {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+}
+
+.category {
+    background: white;
+    padding: 15px;
+    border-radius: 10px;
+    min-width: 180px;
+}
+
+.category h3 {
+    text-align: center;
+    margin-bottom: 10px;
+    font-size: 1.2em;
+}
+
+.words {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.word {
+    padding: 10px;
+    border-radius: 6px;
+    text-align: center;
+    cursor: move;
+    user-select: none;
+    transition: transform 0.2s;
+}
+
+.word:hover {
+    transform: scale(1.05);
+}
+
+.word.dragging {
+    opacity: 0.5;
+}
+
+/* Kategori renkleri */
+.karakter .word {
+    background: #4CAF50;
+    color: white;
+}
+
+.renk .word {
+    background: #FF69B4;
+    color: white;
+}
+
+.doku .word {
+    background: #2196F3;
+    color: white;
+}
+
+.bicim .word {
+    background: #FF5722;
+    color: white;
+}
+
+.ozellik .word {
+    background: #795548;
+    color: white;
+}
+
+#checkButton {
+    display: block;
+    margin: 20px auto;
+    padding: 12px 24px;
+    background: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    font-size: 1.1em;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+#checkButton:hover {
+    background: #45a049;
+}

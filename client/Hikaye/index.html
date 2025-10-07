@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cümle Oluşturma Oyunu</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <div class="game-area">
+            <!-- Hedef Alan -->
+            <div class="sentence-builder">
+                <div class="drop-zone" data-position="0"></div>
+                <div class="drop-zone" data-position="1"></div>
+                <div class="drop-zone" data-position="2"></div>
+                <div class="drop-zone" data-position="3"></div>
+                <div class="drop-zone" data-position="4"></div>
+            </div>
+
+            <!-- Kelime Kategorileri -->
+            <div class="word-categories">
+                <div class="category karakter">
+                    <h3>Karakter</h3>
+                    <div class="words">
+                        <div class="word" draggable="true" data-type="karakter">Robot</div>
+                        <div class="word" draggable="true" data-type="karakter">Kedi</div>
+                        <div class="word" draggable="true" data-type="karakter">Köpek</div>
+                    </div>
+                </div>
+
+                <div class="category renk">
+                    <h3>Renk</h3>
+                    <div class="words">
+                        <div class="word" draggable="true" data-type="renk">Mavi</div>
+                        <div class="word" draggable="true" data-type="renk">Yeşil</div>
+                        <div class="word" draggable="true" data-type="renk">Pembe</div>
+                    </div>
+                </div>
+
+                <div class="category doku">
+                    <h3>Doku</h3>
+                    <div class="words">
+                        <div class="word" draggable="true" data-type="doku">Yumuşak</div>
+                        <div class="word" draggable="true" data-type="doku">Sert</div>
+                        <div class="word" draggable="true" data-type="doku">Pürüzlü</div>
+                    </div>
+                </div>
+
+                <div class="category bicim">
+                    <h3>Biçim</h3>
+                    <div class="words">
+                        <div class="word" draggable="true" data-type="bicim">Yuvarlak</div>
+                        <div class="word" draggable="true" data-type="bicim">Kare</div>
+                        <div class="word" draggable="true" data-type="bicim">Üçgen</div>
+                    </div>
+                </div>
+
+                <div class="category ozellik">
+                    <h3>Özellik</h3>
+                    <div class="words">
+                        <div class="word" draggable="true" data-type="ozellik">Hızlı</div>
+                        <div class="word" draggable="true" data-type="ozellik">Yavaş</div>
+                        <div class="word" draggable="true" data-type="ozellik">Güçlü</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <button id="checkButton">Kontrol Et</button>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
